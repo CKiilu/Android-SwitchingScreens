@@ -31,6 +31,10 @@
             android:layout_height="wrap_content"
             android:text="@string/enter_name_button"
             android:onClick="onSendUsersName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calling_activity_message"/>
     </LinearLayout>
 
 </LinearLayout>
