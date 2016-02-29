@@ -54,5 +54,10 @@ public class MainActivity extends AppCompatActivity {
     public void onGetNameClick(View view) {
         Intent getNameScreenIntent = new Intent(this,
                 SecondScreen.class);
+        final int result = 1;
+
+        getNameScreenIntent.putExtra("callingActivity",  "MainActivity");
+
+        startActivityForResult(getNameScreenIntent, result);
     }
 }
