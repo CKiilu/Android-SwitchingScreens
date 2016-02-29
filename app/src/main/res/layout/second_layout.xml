@@ -21,5 +21,16 @@
             android:id="@+id/users_name_edit_text"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_name_button"
+            android:onClick="onSendUsersName"/>
+    </LinearLayout>
 
 </LinearLayout>
