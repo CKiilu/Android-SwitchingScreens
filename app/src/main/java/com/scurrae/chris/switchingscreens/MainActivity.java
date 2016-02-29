@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,5 +60,16 @@ public class MainActivity extends AppCompatActivity {
         getNameScreenIntent.putExtra("callingActivity",  "MainActivity");
 
         startActivityForResult(getNameScreenIntent, result);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        TextView usersNameMessage = (TextView) findViewById(R.id.users_name_message);
+
+        String nameSentBack = data.getStringExtra("UsersName");
+
+        usersNameMessage.append(" " + nameSentBack);
     }
 }

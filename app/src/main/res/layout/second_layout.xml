@@ -34,7 +34,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/calling_activity_message"/>
+            android:text="@string/calling_activity_message"
+            android:id="@+id/calling_activity_info_text_view"/>
     </LinearLayout>
 
 </LinearLayout>
